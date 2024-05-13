@@ -1,2 +1,3 @@
 _build_lpc40xx_freertos
 .vscode
+.sconsign.dblite

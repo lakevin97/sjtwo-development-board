@@ -622,7 +622,7 @@ class AutoLPCPortFinder:
         for port_info in serial_device_list:
             try:
                 # On Macs, we have extra ports that are likely not real serial ports
-                if "Bluetooth" in port_info.device or "AirPods" in port_info.device or "usbserial-120" in port_info.device:
+                if "Bluetooth" in port_info.device or "AirPods" in port_info.device or "usbserial" in port_info.device:
                     logging.info('Skipping port %s because it is probably not a serial port', port_info.device)
                     continue
                 else:
